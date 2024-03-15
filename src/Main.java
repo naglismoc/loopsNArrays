@@ -21,6 +21,11 @@ public class Main {
         String episode = "Star Wars: Episode "+ " ".repeat( (int) (Math.random() * 10))+((int) (Math.random() * 7)+1) + " - A New Hope";
         System.out.println(episode);
 
+        System.out.println(episode.length());
+        System.out.println(episode.charAt(episode.length() - 14));
+        System.out.println(episode.replaceAll("[a-zA-Z: -]",""));
+        System.out.println(episode.replaceAll("[^\\d]",""));
+        System.out.println("movie to see at weekend: \"idiocracy\" ");
 
     }
 }
